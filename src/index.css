@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./Montserrat-Light.ttf);
+}
+
+* {
+  font-family: Montserrat, Helvetica;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f3f4f6;
+  background-color: #111827;
+  color: #f3f4f6;
+  padding: 35px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.input,
+.select {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-name {
+  width: 30%;
+}
+
+.unit {
+  width: 5%;
+  text-align: center;
+}
+
+.input input,
+.select select {
+  width: calc(65% - 30px);
+  flex-grow: 1;
+  height: 40px;
+  border: 1px solid #f3f4f6;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #f3f4f6;
+  background-color: #111827;
+}
+
+.input input {
+  padding: 0 10px;
+  width: calc(70% - 40px);
+}
+
+.btn {
+  color: #f3f4f6;
+  padding: 0.3em 1.2em;
+  background: linear-gradient(to right, #eeac09, #111827);
+  cursor: pointer;
+  transition: all 0.6s;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #eeac09;
+  color: #111827;
+  font-weight: bold;
+}
+
+.btn:active {
+  transform: scale(1.1, 1.1);
+}
+
+.result {
+  display: flex;
+  width: 100%;
+}
