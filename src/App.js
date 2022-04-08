@@ -139,14 +139,16 @@ const Input = (props) => {
   return (
     <div className="input">
       <span className="field-name">{props.name}</span>
-      <input
-        type="text"
-        onChange={(event) => {
-          props.onChange(props.name, event.target.value);
-        }}
-        placeholder={props.placeholder}
-      />
-      {props.unit && <span className="unit">{props.unit}</span>}
+      <div className="field-data">
+        <input
+          type="text"
+          onChange={(event) => {
+            props.onChange(props.name, event.target.value);
+          }}
+          placeholder={props.placeholder}
+        />
+        {props.unit && <span className="unit">{props.unit}</span>}
+      </div>
     </div>
   );
 };

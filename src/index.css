@@ -35,8 +35,14 @@
   width: 30%;
 }
 
+.field-data {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .unit {
-  width: 5%;
   text-align: center;
 }
 
@@ -50,11 +56,6 @@
   font-size: 16px;
   color: #f3f4f6;
   background-color: #111827;
-}
-
-.input input {
-  padding: 0 10px;
-  width: calc(70% - 40px);
 }
 
 .btn {
