@@ -5,6 +5,7 @@
 
 * {
   font-family: Montserrat, Helvetica;
+  user-select: none;
 }
 
 .main {
